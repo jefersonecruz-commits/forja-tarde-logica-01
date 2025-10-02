@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../imagens/bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+h1{
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    text-shadow:2px 3px 8px #010101;
+
+}
+
+div{
+    border: 4px solid #090909;
+    background-color: floralwhite;
+    color: #090909;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px #010101;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    margin-bottom: 20px;
+}
+
+input,button{
+     padding: 10px;
+     border-radius: 999px;
+     width: 100%;
+}
+button{
+    background-color: #090909;
+    color: #ffffff;
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(red, green, blue)
+    margin-button: 20px;
+    background-color: #010101;
+    height: 70px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 8px #010101;
+    
+}
