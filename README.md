@@ -5,3 +5,5 @@ label = escreva
 h1 = titulo 
 input = leia 
 git clone = "nome do repositorio" 
+!== = diferente 
+=== = igual 
