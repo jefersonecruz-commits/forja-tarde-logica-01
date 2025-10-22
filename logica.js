@@ -1,23 +1,27 @@
-function soma(){
-    var numero1 = document.getElementById("n1").valueAsNumber
-    var numero2 = document.getElementById("n2").valueAsNumber
-    var resposta = document.getElementById("respsoma")
+function check(){
+    var wasBorn = parseInt(document.getElementById("birth").value)
+    var res = document.getElementById("result")
+    var clientAge = document.getElementById("age")
 
-    resposta.textContent = numero1 + numero2
-}function soma(){
-    var numero1 = document.getElementById("n3").valueAsNumber
-    var numero2 = document.getElementById("n4").valueAsNumber
-    var resposta = document.getElementById("respsub")
+    if(isNaN(wasBorn)){
+        res.textContent = "type only numbers 🚫"
+        res.style.color = "red"
+        return
+    }
 
-    resposta.textContent = numero1 - numero2
-}function div(){
-    var a = parseFloat(document.getElementById("n7").value)
-    var b = parseFloat(document.getElementById("n8").value)
-    var resp = document.getElementById("respDiv")
+    const thisYear = new Date().getFullYear()
+    const age = thisYear - wasBorn
 
-    if(b !== 0){
-        resp.innerHTML = (a / b).toFixed(2)
-    }else(
-        resp.innerHTML = "não se divide por 0"
-    )
+    if(age >= 18){
+        res.textContent = "over 18, entry ✅"
+        clientAge.textContent = age
+        document.getElementById("v1").style.display = "block"
+        document.getElementById("v2").style.isplay = "none"
+    }else{
+        res.textContent = "under 18, not allowed 🔞"
+        clientAge.textContent = age
+        document.getElementById("v2").style.display = "block"        
+        document.getElementById("v1").style.display = "none"
+    }
+
 }
